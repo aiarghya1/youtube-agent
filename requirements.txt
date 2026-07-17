@@ -1,0 +1,7 @@
+google-api-python-client>=2.100.0
+python-dotenv>=1.0.0
+PyYAML>=6.0
+Jinja2>=3.1.0
+# Optional: richer qualitative hook/topic analysis via Claude.
+# Only used if ANTHROPIC_API_KEY is set. Safe to leave uninstalled.
+anthropic>=0.39.0

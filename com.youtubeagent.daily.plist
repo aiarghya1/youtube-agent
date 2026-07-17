@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.youtubeagent.daily</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/arghyapolley/Desktop/youtube agent/.venv/bin/python</string>
+        <string>/Users/arghyapolley/Desktop/youtube agent/run.py</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/arghyapolley/Desktop/youtube agent</string>
+
+    <!-- Runs every day at 08:00. Change Hour/Minute as you like. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>8</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/arghyapolley/Desktop/youtube agent/agent.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/arghyapolley/Desktop/youtube agent/agent.log</string>
+</dict>
+</plist>

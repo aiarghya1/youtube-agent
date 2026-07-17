@@ -1,0 +1,24 @@
+# Default configuration for the YouTube niche agent.
+# The daily cron/launchd run uses `default_niches` below.
+# You can always override on the command line:  python run.py "tech reviews"
+
+# Niches analyzed when no niche is passed on the command line.
+# Each is analyzed separately and combined into one email.
+default_niches:
+  - "tech reviews"
+
+# Region and language focus.
+region_code: "IN"          # India
+relevance_language: "hi"   # bias results toward Hindi/India; results still include English
+
+# How many top creators to analyze per niche.
+top_n_creators: 20
+
+# How many recent videos to pull per creator for analysis.
+videos_per_creator: 25
+
+# A video <= this many seconds is treated as a Short.
+short_max_seconds: 60
+
+# Ranking metric for "top" creators: "subscribers" or "views".
+rank_by: "subscribers"
